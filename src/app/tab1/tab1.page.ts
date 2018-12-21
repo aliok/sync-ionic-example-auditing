@@ -38,11 +38,9 @@ export class Tab1Page {
         const self = this;
         // const uri = 'http://localhost:4000/graphql';
         const uri = 'http://192.168.1.111:4000/graphql';
-        // const wsUri = 'ws://localhost:4000/graphql';
         return await createClient({
             httpUrl: uri,
             auditLogging: true
-            // wsUrl: wsUri
         });
     }
 }
